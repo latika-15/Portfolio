@@ -1,0 +1,200 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky; /* Sticky navbar */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li {
+    display: inline-block;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav .menu-toggle {
+    display: none; /* Hide the checkbox input */
+}
+
+nav .hamburger {
+    display: none;  /* Hide hamburger on desktop */
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li {
+    display: inline-block;
+}
+
+/* Section Layout */
+.section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 60px; /* Prevent navbar from overlapping the first section */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.left, .right {
+    width: 45%;
+}
+
+.left h1, .left h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.right img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;            /* Flexbox to arrange skill boxes horizontally */
+    gap: 20px;                /* Space between skill boxes */
+    overflow-x: auto;         /* Enable horizontal scrolling */
+    max-width: 100%;          /* Allow container to stretch to the full width */
+    padding-bottom: 20px;     /* Padding at the bottom for scroll */
+}
+
+.skill-box {
+    flex-shrink: 0;           /* Prevent boxes from shrinking */
+    width: 250px;             /* Fixed width for each skill box */
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skill-box p {
+    font-size: 16px;
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: none; /* Hide navigation links by default on mobile */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        flex-direction: column;
+        width: 200px;
+        padding: 10px;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    nav .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    /* Toggle menu when checkbox is checked */
+    nav .menu-toggle:checked + .hamburger + .nav-links {
+        display: flex; /* Display the menu */
+    }
+}
