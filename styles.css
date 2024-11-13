@@ -7,14 +7,14 @@
 }
 
 body {
-    background-color: #f8f8f8;
+    background-color: #FFE1FF;
     color: #333;
     font-size: 16px;
 }
 
 /* Header and Navigation */
 header {
-    background-color: #333;
+    background-color: #AA5486;
     padding: 10px 20px;
     position: sticky; /* Sticky navbar */
     top: 0;
@@ -72,12 +72,12 @@ nav .nav-links li {
 
 /* Section Layout */
 .section {
-    padding: 60px 20px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin-top: 60px; /* Prevent navbar from overlapping the first section */
+    min-height: 50vh;
+    margin-top: 10 /* Prevent navbar from overlapping the first section */
 }
 
 .container {
@@ -198,3 +198,7 @@ footer {
         display: flex; /* Display the menu */
     }
 }
+#section2, #section4{
+background-color: #B692C2;
+}
+
