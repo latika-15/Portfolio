@@ -11,7 +11,7 @@
     <!-- Navigation Bar -->
     <header>
         <nav>
-            <div class="logo">My Portfolio</div>
+            <div class="pf">My Portfolio</div>
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="hamburger">&#9776;</label>
             <ul class="nav-links">
@@ -24,15 +24,20 @@
     </header>
 
     <!-- First Section: Home -->
+     
     <section id="section1" class="section">
         <div class="container">
             <div class="left">
                 <p>HELLO,</p>
                 <h1>I'm LATIKA</h1>
+                <p><b><i>(Programmer/ Graphic Designer)</i></b></p>
+                <p><i>Crafting digital experiences, pixel by pixel and code by code.</i></p>
                 <p>This is where I showcase my skills and projects.</p>
             </div>
-            <div class="right">
-                <img src="https://assets-global.website-files.com/5e9aa66fd3886aa2b4ec01ca/63db20a5dc3ebf555a2dcfd7_lynn_port.png" alt="Profile Image">
+            <a href="#section3" class="button">My Portfolio →</a>
+            <div class="image">
+                <img src="https://extra-income-guru.com/wp-content/uploads/2019/11/How-To-Get-Started-as-a-Freelance-Graphic-Designer.jpg" alt=" Intro Image">
+             
             </div>
         </div>
     </section>
@@ -44,6 +49,11 @@
                 <h2>My Skills</h2>
                 <p>I specialize in front-end development, graphic designing and video-editing.</p>
                 <div class="skills-container">
+                    <div class="skill-box">
+                        <h3>Canva</h3>
+                        <p>A user-friendly design tool for creating stunning visuals without any design expertise.</p>
+                    </div>
+                  
                     <div class="skill-box">
                         <h3>C</h3>
                         <p>Low-level language used for system programming and applications.</p>
@@ -71,14 +81,16 @@
                         <p>Popular scripting language for creating interactive web pages.</p>
                     </div>
                     <div class="skill-box">
+                        <h3>Adobe Premiere Pro</h3>
+                        <p>A powerful video editing software for professionals and enthusiasts alike.</p>
+                    </div>
+                    <div class="skill-box">
                         <h3>Python</h3>
                         <p>High-level programming language for general-purpose programming.</p>
                     </div>
                 </div>
             </div>
-            <div class="right">
-                <img src="https://content.techgig.com/photo/74172562/top-skill-sets-in-demand-for-techies-in-2020.jpg?279806" alt="Skills Image">
-            </div>
+            
         </div>
     </section>
 
@@ -87,20 +99,25 @@
         <div class="container">
             <div class="left">
                 <h2>My Projects</h2>
-                <p>Explore some of the amazing projects I have worked on.</p>
+                <p>Explore some of the amazing projects I have worked on using Canva.</p>
             </div>
-            <div class="right">
-                <img src="https://tse2.mm.bing.net/th?id=OIP.cyhTg8g7IAOxQuZkZIYm3gHaEK&pid=Api&P=0&h=180" alt="Projects Image">
-            </div>
+            <div class="ima">
+                <img src="images/caraousel.png" alt="Canva Project">
+                </div>
+           
+            
         </div>
     </section>
 
     <!-- Fourth Section: Contact -->
     <section id="section4" class="section contact">
         <div class="container">
+            <div class="left">
             <h2>Contact Me</h2>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
+            <p>Ready to collaborate? Reach out today.</p>
+            </div> 
+            <form>
+                <input type="text" id="cname" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send</button>

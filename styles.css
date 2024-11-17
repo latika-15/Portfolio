@@ -1,9 +1,9 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -12,11 +12,10 @@ body {
     font-size: 16px;
 }
 
-/* Header and Navigation */
 header {
     background-color: #AA5486;
     padding: 10px 20px;
-    position: sticky; /* Sticky navbar */
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -27,17 +26,17 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
-nav .logo {
+/* top head text */
+nav .pf {
     color: #fff;
     font-size: 24px;
     font-weight: bold;
 }
-
+/* navigation links */
 nav .nav-links {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 
 nav .nav-links li {
@@ -51,44 +50,34 @@ nav .nav-links a {
 }
 
 nav .menu-toggle {
-    display: none; /* Hide the checkbox input */
+    display: none; 
 }
 
 nav .hamburger {
-    display: none;  /* Hide hamburger on desktop */
+    display: none;  
     font-size: 30px;
     color: #fff;
     cursor: pointer;
 }
 
-nav .nav-links {
-    display: flex;
-    gap: 20px;
-}
-
-nav .nav-links li {
-    display: inline-block;
-}
-
-/* Section Layout */
 .section {
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
-    margin-top: 10 /* Prevent navbar from overlapping the first section */
+    min-height: 70vh;
+    margin-top: 10 ;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    max-width: 1200px;
+    max-width: 1500px;
 }
-
+/* manage left and right side */
 .left, .right {
-    width: 45%;
+    width: 100%;
 }
 
 .left h1, .left h2 {
@@ -104,26 +93,26 @@ nav .nav-links li {
 .right img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px #AA5486;
 }
 
-/* Skills Section */
+/* skills section */
 .skills-container {
-    display: flex;            /* Flexbox to arrange skill boxes horizontally */
-    gap: 20px;                /* Space between skill boxes */
-    overflow-x: auto;         /* Enable horizontal scrolling */
-    max-width: 100%;          /* Allow container to stretch to the full width */
-    padding-bottom: 20px;     /* Padding at the bottom for scroll */
+    display: flex;            
+    gap: 20px;              
+    overflow-x: auto;        
+    max-width: 100%;         
+    padding-bottom: 20px;     
 }
 
 .skill-box {
-    flex-shrink: 0;           /* Prevent boxes from shrinking */
-    width: 250px;             /* Fixed width for each skill box */
+    flex-shrink: 0;          
+    width: 250px;            
     padding: 20px;
-    background-color: #333;
+    background-color: #3b2a40;
     color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px #AA5486;
     text-align: center;
 }
 
@@ -136,7 +125,7 @@ nav .nav-links li {
     font-size: 16px;
 }
 
-/* Contact Form */
+
 .contact form {
     display: flex;
     flex-direction: column;
@@ -148,34 +137,38 @@ nav .nav-links li {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    box-shadow: 0 5px 10px #AA5486;
+    
 }
 
 .contact button {
     padding: 10px;
     border: none;
-    background-color: #333;
+    background-color: #AA5486;
     color: #fff;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
-.contact button:hover {
-    background-color: #555;
+.contact button:hover ,.button:hover{
+    background-color: #FFE1FF;
+    color: #AA5486;
 }
 
-/* Footer */
+
 footer {
-    background-color: #333;
+    background-color: #AA5486;
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
 
-/* Responsive Design */
+/* for phone */
 @media (max-width: 768px) {
     nav .nav-links {
-        display: none; /* Hide navigation links by default on mobile */
+        display: none;
         position: absolute;
         top: 60px;
         right: 20px;
@@ -190,15 +183,42 @@ footer {
     }
 
     nav .hamburger {
-        display: block; /* Show hamburger on mobile */
+        display: block; 
     }
 
-    /* Toggle menu when checkbox is checked */
     nav .menu-toggle:checked + .hamburger + .nav-links {
-        display: flex; /* Display the menu */
+        display: flex;
     }
 }
+
+
 #section2, #section4{
 background-color: #B692C2;
 }
 
+#section4{
+    min-height: 40vh;
+}
+/* portfolio button */
+.button {
+    background-color: #AA5486;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 70px;
+}
+/* intro sec image */
+.image img {
+    max-width: 100%;
+    border-radius: 50%; 
+    border: 1.5px solid #AA5486;
+    box-shadow: 0 5px 10px #AA5486;
+}
+  /* caraousel  */
+  .ima img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px #AA5486;
+  }
