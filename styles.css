@@ -172,7 +172,7 @@ footer {
         position: absolute;
         top: 60px;
         right: 20px;
-        background-color: #333;
+        background-color: #AA5486;
         flex-direction: column;
         width: 200px;
         padding: 10px;
@@ -221,4 +221,26 @@ background-color: #B692C2;
     width: 100%;
     height: auto;
     box-shadow: 0 4px 10px #AA5486;
+  }
+
+  /* name animation part */
+  .sign {
+    font-size: 30px;
+    color: #AA5486; 
+    display: flex;
+    animation: anim 2s infinite alternate;
+    margin-right: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  @keyframes anim {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2px) rotate(-2deg);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
